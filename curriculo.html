@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Gabriel Alberini Honório</title>
+
+    <link rel="icon" type="image/jpeg" href="icones/favico.jpg">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Gabriel Alberini Honório</h1>
+    <h4>Desenvolvedor Web Front-End</h4>
+    <p>Data de Nascimento: 26/03/2006</p>
+
+    <!-- Única imagem mantida: Sua foto de perfil -->
+    <figure>
+        <img src="imagens/perfil_cropped.png" alt="Foto de Gabriel Alberini Honório" width="150">
+        <figcaption>Minha foto de perfil</figcaption>
+    </figure>
+
+    <section class="Contato">
+        <h2>Contato</h2>
+        <ul>
+            <li>Telefone: (43) 99809-1790 </li>
+            <li>Email: gabrielalberine7@gmail.com</li>
+            <li>Linkedin: <a href="https://www.linkedin.com/in/gabriel-alberini-hon%C3%B3rio-b42660375/"
+                    target="_blank">Gabriel Alberini Honório</a></li>
+            <li>Cidade: Cornélio Procópio - PR</li>
+            <li>GitHub: <a href="https://github.com/gabrielalberine7-star" target="_blank">Gabriel Alberini Honório</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="Resumo">
+        <h2>Resumo</h2>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas na UTFPR. Desenvolvedor Web Front-End com conhecimentos em
+            HTML, CSS, JavaScript, além de experiência em design gráfico e atendimento ao cliente. Busco aplicar
+            inovação e tecnologia na resolução de problemas práticos.</p>
+    </section>
+
+    <section class="Formacao-Academica">
+        <h2>Formação Acadêmica</h2>
+        <ul>
+            <li>
+                <h3>Técnico em Análise e Desenvolvimento de Sistemas 2° Semestre</h3>
+                <p>Universidade Tecnológica Federal do Paraná - UTFPR, Campus Cornélio Procópio</p>
+                <p>Março 2026 - Cursando</p>
+            </li>
+            <li>
+                <h3>Ensino Médio Completo</h3>
+                <p>Colégio Estadual Cívico Militar André Seugling</p>
+                <p>Concluído em 2024</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="Conhecimentos">
+        <h2>Conhecimentos</h2>
+        <ul>
+            <li>Suporte básico a usuários</li>
+            <li>Noções de Linux</li>
+            <li>Noções de hardware e manutenção de computadores</li>
+            <li>Pacote Office e Google Workspace</li>
+            <li>Git e Github</li>
+            <li>HTML, CSS e JavaScript</li>
+            <li>JAVA básico</li>
+        </ul>
+    </section>
+
+    <section class="Experiencia-Profissional">
+        <h2>Experiência Profissional</h2>
+        <ul>
+            <li>
+                <h3>Designer Gráfico Freelancer Autônomo</h3>
+                <p>Atendimento direto a clientes e levantamento de necessidades</p>
+                <p>Dezembro 2025 - Atualmente</p>
+            </li>
+            <li>
+                <h3>Garçom - Buon Fratello Pizzaria Cornélio Procópio</h3>
+                <p>Atendimento ao cliente e preparação de bebidas e refeições</p>
+                <p>Agosto 2024 - Setembro 2024</p>
+            </li>
+            <li>
+                <h3>Operador de Artes em CorelDRAW - Deia Chinelos Sublimados</h3>
+                <p>Criação de artes para sublimação e atendimento a clientes</p>
+                <p>Agosto 2019 - Junho 2021</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="Idiomas">
+        <h2>Idiomas</h2>
+        <ul>
+            <li>Inglês - Fluente</li>
+        </ul>
+    </section>
+
+    <section class="Competencias">
+        <h2>Competências e Qualificações</h2>
+        <ul>
+            <li>Comunicação e Trabalho em Equipe</li>
+            <li>Organização e Proatividade</li>
+            <li>Dinamismo</li>
+            <li>Inglês Fluente: Fluency Academy - 2020; Abrindo Portas UTFPR - 2023</li>
+            <li>Desenvolvimento Web: HTML, CSS, JavaScript - Alura - 2025 - Atualmente</li>
+            <li>Design Gráfico: CorelDRAW, Photoshop - Curso Particular - 2019</li>
+        </ul>
+    </section>
+
+    <hr>
+    <br>
+
+    <!-- Botão e Formulário Modal mantidos da última regra da atividade -->
+    <button onclick="document.getElementById('modalContato').showModal()">Enviar informações de contato</button>
+
+    <dialog id="modalContato">
+        <h2>Deixe seu contato</h2>
+
+        <form method="dialog">
+            <p>
+                <label for="nomeCompleto">Nome Completo:</label><br>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+            </p>
+
+            <p>
+                <label for="instagramLink">Link para o Instagram:</label><br>
+                <input type="url" id="instagramLink" name="instagramLink"
+                    placeholder="https://instagram.com/seuusuario">
+            </p>
+
+            <p>
+                <label for="whatsappNum">Número do WhatsApp:</label><br>
+                <input type="tel" id="whatsappNum" name="whatsappNum" placeholder="(XX) 9XXXX-XXXX">
+            </p>
+
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="button" onclick="document.getElementById('modalContato').close()">Fechar</button>
+        </form>
+    </dialog>
+
+</body>
+
+</html>
